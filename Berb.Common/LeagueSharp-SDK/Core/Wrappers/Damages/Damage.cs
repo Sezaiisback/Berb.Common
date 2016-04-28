@@ -680,7 +680,7 @@ namespace LeagueSharp.SDK
             if (source is AIHeroClient)
             {
                 // Exhaust
-                if (source.HasBuff("Exhaust"))
+                if (source.HasBuff("SummonerExhaust"))
                 {
                     amount *= 0.6;
                 }
