@@ -883,7 +883,7 @@ namespace LeagueSharp.SDK
                             (hero, @base) => hero.GetCritMultiplier() * hero.TotalAttackDamage);
                         AddPassiveAttack(
                             "Shaco",
-                            (hero, @base) => hero.IsFacing(@base) && !@base.IsFacing(hero),
+                            (hero, @base) => hero.LSIsFacing(@base) && !@base.LSIsFacing(hero),
                             DamageType.Physical,
                             (hero, @base) => (hero.TotalAttackDamage * 0.2) * hero.GetCritMultiplier(true));
                         AddPassiveAttack(
